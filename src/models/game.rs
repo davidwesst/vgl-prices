@@ -1,5 +1,7 @@
+use serde::{Serialize, Deserialize};
 use std::fmt::{Display, Formatter, Result};
 
+#[derive(Serialize, Deserialize, Debug)]
 pub struct Game {
     id: u8,
     title: String
