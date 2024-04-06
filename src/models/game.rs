@@ -18,3 +18,12 @@ impl Display for Game {
         write!(f, "{} ({})", self.title, self.id)
     }
 }
+
+#[cfg(test)]
+mod game_tests {
+    #[test]
+    fn my_first_test() {
+        let result = 1 + 2;
+        assert_eq!(result, 3);
+    }
+}
